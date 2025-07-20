@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="lv">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESSA - Elektroniskās Skolvadības Sistēmas Asistents</title>
+    <meta name="description" content="ESSA - rīks, kas sniedz atbalstu izglītības iestāžu administrēšanas procesā, izmantojot modernu skolvadības sistēmas datu analīzi.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+    <!-- Navbar structure -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand smooth-link" href="#navbar" title="Elektroniskās Skolvadības Sistēmas Asistents">
+                <img src="gfx/essa_logo.png" alt="ESSA logo - Elektroniskās Skolvadības Sistēmas Asistents"> <span class="d-lg-none">ESSA</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#par-essa" title="Par ESSA">Par ESSA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lietosana" title="Programmas lietošana">Lietošana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lejupielade" title="Programmas lejupielādēšana">Lejupielāde</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakti" title="Kontakti">Kontakti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top section structure -->
+    <section class="top">
+        <div class="top-text1">
+            <p>
+                <span class="highlight">E</span>lektroniskās<br>
+                <span class="highlight">S</span>kolvadības<br>
+                <span class="highlight">S</span>istēmas<br>
+                <span class="highlight">A</span>sistents
+            </p>
+        </div>
+        <div class="top-text2">
+            <a class="btn btn-warning smooth-link" href="#par-essa" title="Uzzini vairāk par ESSA">Uzzini vairāk</a>
+            <h2>IETAUPI SAVU LAIKU!</h2>
+        </div>
+    </section>
+
+    <!-- Section 1: About ESSA -->
+    <section id="par-essa" class="section">
+        <div class="container">
+            <div class="text-start mb-4">
+                <h2 class="border-bottom border-3 border-warning pb-2 d-inline-block">Par ESSA</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong><i class="fas fa-calendar-alt me-2"></i>Stundu saraksta izgūšana</strong></p>
+                    <p>Izmantojot ESSA, tu vari ātri un ērti izgūt stundu sarakstu izvēlētajām klasēm no skolvadības
+                        sistēmas. Programma piedāvā arī iespēju pievienot stundu laikus, skolotājus un fakultatīvās un
+                        interešu izglītības nodarbības.</p>
+
+                    <p><strong><i class="fas fa-chart-bar me-2"></i>Detalizēta vērtējumu analīze</strong></p>
+                    <p>Izmantojot ESSA, tu vari ātri un ērti izgūt pārskatāmus kopsavilkumus par skolotāju izliktajiem
+                        vērtējumiem, kā arī izgūt datus par skolēnu mācību sasniegumu vērtējumiem.</p>
+
+                    <p><strong><i class="fas fa-book-open me-2"></i>Mācību stundu tēmu analīze</strong></p>
+                    <p>Programma palīdz pārbaudīt, vai mācību stundu ieraksti elektroniskajā žurnālā atbilst
+                        noteiktajiem standartiem. ESSA analizē tēmu saturu un izceļ tās, kurās trūkst nepieciešamo
+                        frāžu, piemēram, "Sasniedzamie rezultāti".</p>
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <p><strong><i class="fas fa-download me-2"></i>Datu lejupielāde no digitālajām platformām</strong>
+                    </p>
+                    <p>ESSA ļauj lejupielādēt datus no digitālajām izglītības platformām, piemēram, stundu sarakstus un
+                        elektroniskos žurnālus. Dati tiek šifrēti, lai nodrošinātu to drošību. Tu kā programmas
+                        lietotājs vari izvēlēties lejupielādēt tikai nepieciešamos datus, ietaupot laiku. <a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="5" id="db-update">Izlasi
+                            vairāk.</a></p>
+
+                    <div class="alert alert-info border border-warning rounded shadow-sm mt-4 d-flex align-items-center" role="alert" style="font-size: 1.05em; background-color: #fffbe6;">
+                        <i class="fas fa-school fa-lg text-warning me-3"></i>
+                        <span><a href="https://www.e-klase.lv" target="_blank" rel="noopener noreferrer">E-klase</a> ir visplašāk lietotā tiešsaistes skolvadības sistēma Latvijā, kuru izmanto vairāk kā 90% Latvijas izglītības iestāžu.
+                        <br>ESSA ļauj lejupielādēt datus no E-klase, lai analizētu stundu sarakstus un vērtējumus.</span>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Usage -->
+    <section id="lietosana" class="section">
+        <div class="container">
+            <div class="text-start mb-4">
+                <h2 class="border-bottom border-3 border-warning pb-2 d-inline-block">Programmas lietošana</h2>
+            </div>
+            <div id="usageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="60000">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Overview of all slides -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="1">Programmas
+                                            uzsākšana</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="2">Autorizācija
+                                            elektroniskās skolvadības sistēmās</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="3">Datu
+                                            izgūšana no elektroniskās skolvadības sistēmas</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="4">Informācija par
+                                            pēdējo datu izgūšanu no sistēmas</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="5">Stundu saraksta
+                                            veidošana</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="6">Informācija par
+                                            vērtēšanu → Skolotāji</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="7">Informācija par
+                                            vērtēšanu → Skolēni</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="8">Informācija par
+                                            mācību stundu tēmām</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="9">Programmas
+                                            uzstādījumi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_startpage.png" data-description="Programmas logs pēc palaišanas.">
+                                    <img src="gfx/scr/essa_startpage.png" alt="ESSA - Programmas uzsākšana" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_startpage.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Programmas uzsākšana</strong></p>
+                                <p>Pēc programmas palaišanas parādīsies informācija par apstiprinātiem mācību gada
+                                    sākuma, beigu un brīvdienu laikiem.</p>
+                                <p>Logā var izvēlēties šādas funkcijas:</p>
+                                <ul>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="5">Stundu saraksta
+                                            veidošana</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="6">Informācija par
+                                            vērtēšanu → Skolotāji</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="7">Informācija par
+                                            vērtēšanu → Skolēni</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="8">Informācija par
+                                            mācību stundu tēmām</a></li>
+                                    <li><a href="#" data-bs-target="#usageCarousel" data-bs-slide-to="4">Datu
+                                            lejupielādēšana no digitālās izglītības platformas</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_startpage.png" data-description="Programmas logs pēc palaišanas.">
+                                    <img src="gfx/scr/essa_startpage.png" alt="ESSA - Programmas uzsākšana" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_startpage.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Autorizācija elektroniskās skolvadības sistēmās</strong></p>
+                                <p>Lai lejupielādētu datus no elektroniskās skolvadības sistēmas ir jābūt autorizētai
+                                    darbinieka piekļuvei. Datu analīzes apjoms ir atkarīgs no piešķirtajām tiesībām.</p>
+
+                                <p><a href="https://www.e-klase.lv" target="_blank" rel="noopener noreferrer">E-klase</a> ir visplašāk lietotā tiešsaistes skolvadības sistēma Latvijā, kuru izmanto vairāk kā 90% Latvijas izglītības iestāžu.
+                                    ESSA ļauj lejupielādēt datus no E-klase, lai analizētu stundu sarakstus un vērtējumus.</p>
+
+                                <p class="alert alert-info">Drošības dēļ, tavi piekļuves dati (lietotājvārds un parole)
+                                    nekur netiek saglabāti. Ja izmanto SQLCipher bibliotēku, visi izgūtie dati ir šifrēti, kas neļauj tos nolasīt neautorizētām personām.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_eklase_connect.png" data-description="Autorizācija elektroniskās skolvadības sistēmās.">
+                                    <img src="gfx/scr/essa_eklase_connect.png" alt="ESSA - Autorizācija elektroniskās skolvadības sistēmās" loading="lazy"
+                                        class="img-fluid rounded shadow-sm lazy img-rows" data-src="gfx/scr/essa_eklase_connect.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Datu izgūšana no elektroniskās skolvadības sistēmas</strong></p>
+                                <p>Pēc pieslēgšanās sistēmai tu redzēsi klašu sarakstu, no kura varēsi izgūt
+                                    stundu sarakstu un datus no elektroniskā žurnāla.</p>
+                                <p>Kalendārā iestati datumu, no kura jāizgūst stundu saraksts. Ieteicams
+                                    izgūt datus sākot ar nākamo pirmdienu, tādējādi tu vari būt pārliecināts, ka
+                                    dati ir aktuāli.</p>
+                                <p>Datu žurnāls tiek izgūts visam semestrim, visiem priekšmetiem.</p>
+                                <p class="alert alert-info">Žurnāla datu izgūšana var aizņemt līdz pat vairākām
+                                    minūtēm! Tāpēc labāk izvēlies tikai vajadzīgās klases.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_eklase_get_timetable.png"
+                                    data-description="Datu izgūšana no elektroniskās skolvadības sistēmas.">
+                                    <img src="gfx/scr/essa_eklase_get_timetable.png" alt="ESSA - Datu izgūšana no elektroniskās skolvadības sistēmas" loading="lazy"
+                                        class="img-fluid rounded shadow-sm lazy img-rows" data-src="gfx/scr/essa_eklase_get_timetable.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Informācija par pēdējo datu izgūšanu no sistēmas</strong></p>
+                                <p>Programma informē par pēdējo datu atjaunošanas datumu datubāzē, kas atvieglo lēmuma
+                                    pieņemšanu par to, vai dati ir jāatjaunina.</p>
+                                <p>Datu izgūšanas mehānisms ir veidots tā, lai netraucētu normālu elektroniskās
+                                    skolvadības sistēmas darbību, tas nozīmē, ka datu izgūšana var aizņemt līdz pat
+                                    vairākām minūtēm.</p>
+                                <p class="alert alert-info">Nav nepieciešams lejupielādēt datus katru reizi, kad
+                                    izmanto programmu. Visi
+                                    izgūtie dati tiek glabāti datubāzē. Datus var lejupielādēt, kad ir
+                                    zināms, ka tie noteikti ir mainījušies.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_db_update.png" data-description="Informācija par pēdējo datu izgūšanu no sistēmas.">
+                                    <img src="gfx/scr/essa_db_update.png" alt="ESSA - Informācija par pēdējo datu izgūšanu no sistēmas" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_db_update.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Stundu saraksta veidošana</strong></p>
+                                <p>Balstoties uz elektroniskajā skolvadības sistēmā esošajiem datiem, var izveidot
+                                    stundu sarakstu izvēlētajām klasēm, kā arī izveidot mācību telpu
+                                    noslogojuma plānu konkrētai dienai.</p>
+                                <p>Stundu sarakstā ir iespēja iekļaut mācību stundas, fakultatīvās
+                                    un interešu izglītības nodarbības, kā arī pagarinātās dienas grupas nodarbības.</p>
+                                <p class="alert alert-info">Papildu konfigurāciju stundu saraksta izveidei, piemēram,
+                                    stundu laiku maiņu, skolotāju pievienošanu vai citu parametru pielāgošanu, var veikt
+                                    programmas iestatījumos.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_schedule.png" data-description="Stundu saraksta veidošana.">
+                                    <img src="gfx/scr/essa_schedule.png" alt="ESSA - Stundu saraksta veidošana" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_schedule.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Informācija par vērtēšanu → Skolotāji</strong></p>
+                                <p>Detalizēta visu mācību stundu analīze, sadalot pēc skolotājiem, klasēm un
+                                    priekšmetiem. Tabulā ir norādīti šādi dati:</p>
+                                <ul>
+                                    <li><strong>PD(%)</strong> - pārbaudes darba svars procentos,</li>
+                                    <li><strong>V(max)</strong> - skolēnu skaits,</li>
+                                    <li><strong>V(b)</strong> - piešķirto vērtējumu skaits pārbaudes darbos,</li>
+                                    <li><strong>V(%), V(stap)</strong> - piešķirto vērtējumu skaits kā %, STAP</li>
+                                    <li><strong>V(i)</strong>, <strong>V(ni)</strong>, <strong>V(nv)</strong>,
+                                        <strong>V(n)</strong>, <strong>V(vam)</strong> - skaits "i", "ni", "nv", "n", VAM,
+                                    </li>
+                                    <li><strong>Tēma</strong> - mācību stundas tēma.</li>
+                                </ul>
+                                <p>Ar krāsu ir atzīmēti pārbaudes darbi, kuros vērtējumi nav piešķirti visiem skolēniem.
+                                    Datus var grupēt un kārtot, kā arī eksportēt uz Excel failu.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_analysis_ev_1.png" data-description="Detalizēta visu mācību stundu analīze, sadalot pēc skolotājiem, klasēm un
+                                    priekšmetiem.">
+                                    <img src="gfx/scr/essa_analysis_ev_1.png" alt="ESSA - Informācija par vērtēšanu → Skolotāji" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_analysis_ev_1.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Informācija par vērtēšanu → Skolēni</strong></p>
+                                <p>Detalizēta datu analīze par klasēm un skolēniem.</p>
+                                <p>Tabulā ir norādīti šādi dati:</p>
+                                <ul>
+                                    <li><strong>n, nv, i, ni</strong> - saņemto "n", "nv", "i", "ni" skaits,</li>
+                                    <li><strong>nv(PD)</strong> - saņemto "nv" skaits pārbaudes darbos,</li>
+                                    <li><strong>1-10</strong> - visu saņemto vērtējumu vidējais,</li>
+                                    <li><strong>%</strong> - visu saņemto vērtējumu vidējais procentos,</li>
+                                    <li><strong>1,2,...,9,10, S,T,A,P, VAM</strong> - saņemto vērtējumu skaits.</li>
+                                </ul>
+                                <p>Ar citu krāsu ir atzīmēti skolēni, kuriem ir "nv" pārbaudes darbā. Datus var
+                                    grupēt un kārtot, kā arī eksportēt uz Excel failu.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_analysis_ev_2.png" data-description="Detalizēta datu analīze par klasēm un skolēniem.">
+                                    <img src="gfx/scr/essa_analysis_ev_2.png" alt="ESSA - Informācija par vērtēšanu → Skolēni" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_analysis_ev_2.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 9 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Informācija par mācību stundu tēmām</strong></p>
+                                <p>Šī analīze palīdz nodrošināt, ka mācību stundu tēmas ir pilnībā aprakstītas un
+                                    atbilst noteiktajiem standartiem.</p>
+                                <p>Tiek analizēta šādu frāžu esamība stundas tēmā:</p>
+                                <ul>
+                                    <li><strong>SR</strong>, <strong>S.R</strong></li>
+                                    <li><strong>Sasniedzamie rezultāti</strong></li>
+                                    <li><strong>Sasniedzamais rezultāts</strong></li>
+                                </ul>
+                                <p>Ar citu krāsu ir atzīmēti ieraksti, kuros nav iekļauti nepieciešamie
+                                    izteicieni. Datus var grupēt un kārtot, kā arī eksportēt uz Excel failu.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_analysis_sr.png"
+                                    data-description="Šī analīze palīdz nodrošināt, ka mācību stundu tēmas ir pilnībā aprakstītas un atbilst noteiktajiem standartiem.">
+                                    <img src="gfx/scr/essa_analysis_sr.png" alt="ESSA - Informācija par mācību stundu tēmām" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_analysis_sr.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 10 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Programmas uzstādījumi</strong></p>
+                                <p>Programma ļauj skolām personalizēt eksportēto stundu sarakstu Excel formātā.</p>
+                                <ul>
+                                    <li>Var definēt savu stundu saraksta nosaukumu.</li>
+                                    <li>Iespēja pielāgot dienu nosaukumus, stundu sākuma un beigu laikus.</li>
+                                    <li>Programma automātiski optimizē skolotāju vārdus un uzvārdus, kā arī priekšmetu
+                                        nosaukumus.</li>
+                                </ul>
+                                <p class="alert alert-info">Visas konfigurācijas izmaiņas jāveic ļoti uzmanīgi.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="d-block mt-2 popup-trigger" data-image="gfx/scr/essa_settings.png"
+                                    data-description="Programma ļauj personalizēt eksportēto stundu sarakstu uz Excel formātu.">
+                                    <img src="gfx/scr/essa_settings.png" alt="ESSA - Programmas uzstādījumi" loading="lazy" class="img-fluid rounded shadow-sm lazy img-rows"
+                                        data-src="gfx/scr/essa_settings.png" style="cursor: pointer;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Carousel controls -->
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <button class="btn btn-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide="prev">
+                    <i class="fas fa-arrow-left me-2"></i> Iepriekšējais
+                </button>
+                <div class="btn-group" id="carousel-indicators">
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="0">1</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="1">2</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="2">3</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="3">4</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="4">5</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="5">6</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="6">7</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="7">8</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="8">9</button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide-to="9">10</button>
+                </div>
+                <button class="btn btn-warning" type="button" data-bs-target="#usageCarousel" data-bs-slide="next">
+                    Nākamais <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Download -->
+    <section id="lejupielade" class="section">
+        <div class="container">
+            <div class="text-start mb-4">
+                <h2 class="border-bottom border-3 border-warning pb-2 d-inline-block">Programmas lejupielādēšana</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>1. iespēja → ja vēlies izmantot pirmkodu</strong></p>
+                    <p>Lai palaistu programmu, ir nepieciešams <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">Python</a> interpretators un <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">GIT</a>.</p>
+                    <p>Izpildi šādas komandas:</p>
+                    <p>
+                    <pre class="code-block">git clone https://github.com/mariuszduka/essa.git
+cd essa
+pip install -r requirements.txt</pre>
+                    </p>
+                    <p class="text-muted mt-3">
+                        <i class="fas fa-lock me-2 text-warning"></i>
+                        Ja vēlies šifrēt informāciju SQL datubāzē, ir nepieciešams instalēt <a href="https://github.com/coleifer/sqlcipher3" target="_blank" rel="noopener noreferrer">SQLCipher</a>
+                        bibliotēku. Lūdzu, izlasi šo <a href="https://github.com/silverback97/pysqlcipher3-for-windows" target="_blank" rel="noopener noreferrer">dokumentāciju</a>, ja izmanto operētājsistēmu
+                        Windows.
+                    </p>
+                    <p>Tagad var palaist programmu:</p>
+                    <p>
+                    <pre class="code-block">cd app
+python start.py</pre>
+                    </p>
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <div>
+                        <p><strong>2. iespēja → ja vēlies palaist īpašu versiju operētājsistēmai Windows</strong></p>
+
+                        <div style="text-align: left;">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">
+                                    <span class="fw-bold text-warning me-2"><i class="fas fa-download"></i></span>
+                                    <a href="https://github.com/mariuszduka/ESSA/releases/">Lejupielādē ZIP failu</a> ar ESSA programmu un izpako to.
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="fw-bold text-warning me-2"><i class="fas fa-play"></i></span>
+                                    Atver mapi un palaid failu <code>ESSA.exe</code>.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="d-flex flex-column align-items-center" style="margin-top: 46px; margin-bottom: 46px;">
+                            <a href="https://github.com/mariuszduka/ESSA/releases/" class="btn btn-lg btn-warning mb-3" style="width: 100%; max-width: 300px;">
+                                <i class="fas fa-download me-2"></i>Lejupielāde
+                            </a>
+                            <a href="https://github.com/mariuszduka/essa" target="_blank" rel="noopener" class="btn btn-lg btn-secondary" style="width: 100%; max-width: 300px;">
+                                <i class="fab fa-github me-2"></i>GitHub
+                            </a>
+                        </p>
+                        <p><strong>Vienkārši lejupielādē failu, izpako to un palaid programmu!</strong></p>                    
+                    </div>
+                    <div class="alert alert-info border border-warning rounded shadow-sm mt-4 d-flex align-items-center" role="alert" style="font-size: 1.05em; background-color: #fffbe6;">
+                        <i class="fas fa-laptop-code fa-lg text-warning me-3"></i>
+                        <span>Programmu ESSA var lejupielādēt un lietot bez maksas.</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact -->
+    <section id="kontakti" class="section">
+        <div class="container">
+            <div class="text-start mb-4">
+                <h2 class="border-bottom border-3 border-warning pb-2 d-inline-block">Kontakti</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>ESSA :: Elektroniskās Skolvadības Sistēmas Asistents</strong></p>
+
+                    <p>© <a href="https://duka.lv" data-umami-event="Contact::WWW [link]" target="_blank" rel="noopener">Mariusz Duka</a></p>
+
+                    <div class="d-flex flex-wrap gap-2" style="margin-bottom: 20px;">
+                        <a href="#" data-umami-event="Contact::E-mail [button]" class="btn btn-warning btn-sm text-decoration-none" id="email-link">
+                            <i class="fas fa-envelope me-2"></i>E-pasts
+                        </a>
+                        <a href="https://duka.lv" data-umami-event="Contact::WWW [button]" target="_blank" rel="noopener" class="btn btn-warning btn-sm text-decoration-none">
+                            <i class="fas fa-globe me-2"></i>WWW
+                        </a>
+                        <a href="https://github.com/mariuszduka" data-umami-event="Contact::GitHub [button]" target="_blank" rel="noopener" class="btn btn-warning btn-sm text-decoration-none">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                    <p>Droši raksti man, ja Tev ir kādi jautājumi par programmas lietošanu.</p>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Programmā ir izmantota sekojoša programmatūra:</p>
+                    <ul class="list-unstyled ms-2">
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-plug text-warning"></i>
+                            </span>
+                            ESSA Connect (E–Klase driver)
+                        </li>
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-lock text-warning"></i>
+                            </span>
+                            SQLCipher (Full Database Encryption for SQLite)
+                        </li>
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-code text-warning"></i>
+                            </span>
+                            BeautifulSoup4 – HTML and XML parsing
+                        </li>
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-desktop text-warning"></i>
+                            </span>
+                            ttkbootstrap – modern GUI for tkinter
+                        </li>
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-file-excel text-warning"></i>
+                            </span>
+                            XlsxWriter – create Excel .xlsx files
+                        </li>
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-network-wired text-warning"></i>
+                            </span>
+                            Requests – send HTTP requests easily
+                        </li>
+                        <li class="d-flex align-items-center mb-1">
+                            <span class="d-inline-block text-center" style="width: 2em;">
+                                <i class="fas fa-tasks text-warning"></i>
+                            </span>
+                            tqdm – progress bars for loops and scripts
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cookies Banner -->
+    <div id="cookies-banner" class="cookies-banner" aria-modal="true" role="alertdialog">
+        <h4>Paziņojums par sīkdatnēm</h4>
+        <p>Šī tīmekļa vietne izmanto <a href="https://allaboutcookies.org/how-to-manage-cookies" target="_blank" rel="noopener noreferrer" id="about-cookies" class="text-warning">sīkdatnes</a>.
+            Piekrītot sīkdatņu izmantošanai, tiks nodrošināta tīmekļa vietnes optimāla darbība. Turpinot vietnes apskati, jūs piekrītat, ka izmantosim sīkdatnes jūsu ierīcē. Savu piekrišanu jūs
+            jebkurā laikā varat atsaukt, nodzēšot saglabātās sīkdatnes.</p>
+        <div>
+            <button id="decline-cookies" class="btn btn-secondary btn-sm">Atteikties</button>
+            <button id="accept-cookies" class="btn btn-warning btn-sm">Piekrītu</button>
+        </div>
+    </div>
+
+    <!-- Policy Privacy -->
+    <div id="privacy-policy" class="privacy-policy" aria-modal="true" role="alertdialog">
+        <h4>Privātuma politika</h4>
+        <p>Šī vietne nevāc nekādu personisko informāciju. Tā neizmanto sīkdatnes (cookies), pārlūkprogrammas vietējo vai sesijas krātuvi, un arī neizmanto nekādas ārējas izsekošanas tehnoloģijas.
+            Vietnē netiek izmantoti reklāmas pakalpojumi vai sociālo tīklu spraudņi.</p>
+        <p>Lai uzlabotu vietnes veiktspēju un analizētu apmeklētāju datus, tiek izmantots statistikas rīks Umami, kas neizmanto sīkdatnes. Tas apkopo anonīmus datus, piemēram, apmeklētās lapas,
+            pārlūkprogrammas un ierīces informāciju.</p>
+        <p>Ja nākotnē tiks pievienotas funkcijas, kas apstrādā personas datus, privātuma politika tiks atjaunināta, un par to tiks sniegta informācija.</p>
+        <div>
+            <button id="close-privacy-policy" class="btn btn-warning btn-sm">Aizvērt</button>
+        </div>
+    </div>
+
+    <!-- Popup structure -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close" title="Aizvērt">&times;</button>
+            <img id="popup-image" src="gfx/essa_splash.jpg" loading="lazy" alt="Popup">
+            <div class="popup-text-content">
+                <p id="popup-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">&copy; 2025 Mariusz Duka</li>
+                        <li class="list-inline-item">
+                            <a class="text-white text-decoration-none smooth-link" href="#" id="privacy-policy-link" title="Privātuma politika">Privātuma politika</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="text-white text-decoration-none smooth-link" href="#par-essa" title="Par ESSA">Par
+                                ESSA</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white text-decoration-none smooth-link" href="#lietosana" title="Programmas lietošana">Lietošana</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white text-decoration-none smooth-link" href="#lejupielade" title="Programmas lejupielādēšana">Lejupielāde</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white text-decoration-none smooth-link" href="#kontakti" title="Kontakti">Kontakti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

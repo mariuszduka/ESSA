@@ -1,0 +1,27 @@
+{
+    "themes": [
+        {
+            "essa": {
+                "type": "light",
+                "colors": {
+                    "primary": "#eb6234",
+                    "secondary": "#aea79f",
+                    "success": "#38b44a",
+                    "info": "#17a2b8",
+                    "warning": "#efb73e",
+                    "danger": "#df382c",
+                    "light": "#e9ecef",
+                    "dark": "#162730",
+                    "bg": "#f2f2f2",
+                    "fg": "#333333",
+                    "selectbg": "#aea79f",
+                    "selectfg": "#ffffff",
+                    "border": "#ced4da",
+                    "inputfg": "#333333",
+                    "inputbg": "#fff",
+                    "active": "#e5e5e5"
+                }
+            }
+        }
+    ]
+}

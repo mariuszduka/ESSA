@@ -1,6 +1,6 @@
 ﻿'''
 ESSA :: Electronic Grade Book Assistant
-Copyright (C) 2025 Mariusz Duka
+Copyright (C) 2026 Mariusz Duka
 This file is part of ESSA and is licensed under the GNU GPLv3 or later.
 See the LICENSE file for full text.
 '''
@@ -116,9 +116,14 @@ class EKlaseAuth(ttk.Frame):
         password = self.password.get().strip()
 
         auth_error_msg = 'Nepareizi ievadīts lietotājvārds un/vai parole.'
-        login_format = r'^\d{6}-\d{5}$'
 
-        if login != '' and password != '' and re.match(login_format, login):
+        personal_code_pattern = r'\d{6}-\d{5}' # Latvian personal code pattern
+        username_pattern = r'[A-Za-z0-9_.@-]{3,}' # General username pattern
+
+        is_personal_code = re.fullmatch(personal_code_pattern, login) is not None
+        is_username = re.fullmatch(username_pattern, login) is not None
+
+        if login and password and (is_personal_code or is_username):
             self.platform.set_login(login)
             self.platform.set_password(password)
 

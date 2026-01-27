@@ -1,5 +1,5 @@
 beautifulsoup4
-ttkbootstrap
+ttkbootstrap==1.17.0
 xlsxwriter
 requests
 tqdm
